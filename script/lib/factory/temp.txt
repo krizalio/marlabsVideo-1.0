@@ -1,0 +1,27 @@
+$scope.hide = false;
+		$scope.key = "";
+		var setHide = function() {
+			$scope.hide = true;
+		}
+		var setNum = function(num) {
+			if(num) {
+				console.log(num);
+			}
+		}
+
+/*var loadAPI = function(key, exec) {
+			var result = "";
+			gapi.client.setApiKey('AIzaSyCqDpXxB_V5lLOiKMHUFBvZdAs6aWdszWY');
+			gapi.client.load('youtube', 'v3', function() {
+				var result = '';
+				var request = gapi.client.youtube.search.list({
+					q : key,
+					part: 'snippet'
+				}).execute(function(response) {
+					if(response.result) {
+						exec(JSON.stringify(response.result));
+					}
+				});
+			})
+		}
+		return loadAPI(key);*/

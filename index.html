@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="videoApp">
+	<head charset="utf-8">
+		<title>MarlabsVideo</title>
+		<meta http-equiv="Content-Type" content="text/html">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="..\..\bootstrap\css\bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="..\..\bootstrap\css\bootstrap-theme.css" rel="stylesheet" type="text/css">
+		<link href="css\mainbody.css" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	</head>
+	<body style="font-family:Ubuntu">
+		<div ng-controller="mainCtrl">
+			<div class="container-fluid" ng-hide="hide">
+				<h1 class="lead">Marlabs Video</h1>
+				<input type="text" id="mainIn" placeholder="Type in your searching keyword here" ng-model="key"></input>
+				<button id="search" class="btn btn-primary" ng-click="setKey(key)">
+					<div id="icontainer">
+						<div id="isearch"></div>
+						<div id="iback"></div>
+					</div>
+				</button>
+			</div>
+			<div class="navbar navbar-default" ng-show="hide">
+				<div class="navinsert" ng-click="setKey()">Marlabs Video</div>
+				<div class="leftnav navbar navbar-default"></div>
+				<div class="rightbox col-xs-10">
+					<div class="imgContainer" ng-hide="playVideo">
+						<div class="midnav midcap col-xs-8" ng-show="numVideo">
+							about {{numVideo}} results are found, show the first {{showVideoLen}}
+						</div>
+						<div class="midnav col-xs-8" style="height:200px;padding:10px" ng-show="message"
+							ng-repeat="item in videos">
+							<img class="clickable" src={{item.snippet.thumbnails.medium.url}} alt="aaa" 
+								ng-click="showVideoBig(item)" />
+						</div>
+						<div class="midnav butcap col-xs-8"></div>
+					</div>
+					<div class="midnav videonav col-xs-8" ng-show="playVideo">
+						<object id="videoBox" width="320" height="240"
+							data=""></object>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<script data-main="script\main" src="script\require\require.js"></script>
+	</body>
+</html>

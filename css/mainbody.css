@@ -1,0 +1,128 @@
+input
+{
+	position: relative;
+	left: 500px;
+	width: 24%;
+}
+button:focus
+{
+	outline: 0;
+}
+video
+{
+	width: 320px;
+	height: 240px;
+}
+img
+{
+	cursor: pointer;
+}
+object
+{
+	margin-top: 80px;
+	margin-left: 200px;
+}
+.lead
+{
+	font-size: 3em;
+	text-align: center;
+}
+.container-fluid
+{
+	position: relative;
+	top: 150px;
+}
+.navinsert
+{
+	font-size: 1.5em;
+	padding-top: 5px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+.navbar
+{
+	position: fixed;
+	width: 100%;
+}
+.leftnav
+{
+	width: 20%;
+	height: 580px;
+	position: fixed;
+	top: 50px;
+	z-index: 3;
+}
+.midcap
+{
+	height: 30px;
+	border-radius: 3px 3px 0px 0px;
+	border-top: 0.1em solid #ccc;
+	border-bottom: 0.1em solid #ccc;
+	padding-right: 10px;
+	padding-top: 3px;
+	text-align: right;
+}
+.butcap
+{
+	height: 30px;
+	border-radius: 0px 0px 3px 3px;
+	border-bottom: 0.1em solid #ccc;
+	padding-right: 10px;
+	padding-top: 3px;
+	text-align: right;
+	margin-bottom: 20px;
+}
+.midnav
+{
+	background: #fff;
+	position: relative;
+	top: 20px;
+	left: 100px;
+	border-left: 0.1em solid #ccc;
+	border-right: 0.1em solid #ccc;
+}
+.videonav
+{
+	height: 480px;
+}
+.rightbox
+{
+	background: #ddd;
+	position: fixed;
+	left: 17%;
+	height: 580px;
+	top: 50px;
+	z-index: 1;
+	overflow: auto;
+}
+#search
+{
+	width: 2.5%;
+	height: 27px;
+	position: relative;
+	left: 498px;
+	top: -2px;
+}
+#icontainer
+{
+	position: relative;
+	left: -3px;
+	top: -1px;
+}
+#isearch
+{
+	width: 12px;
+	height: 12px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+}
+#iback
+{
+	width: 3px;
+	height: 7px;
+	background: #fff;
+	transform: rotate(-45deg);
+	position: relative;
+	top: -4px;
+	left: 10px;
+}
